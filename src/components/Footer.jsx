@@ -1,6 +1,11 @@
 import React from "react";
 import { Box, Typography, Link, Stack } from "@mui/material";
 
+import contactIcon from "../assets/contact.jpeg";
+import facebookIcon from "../assets/facebook.png";
+import instagramIcon from "../assets/instagram.avif";
+import whatsappIcon from "../assets/whatsapp.jpeg";
+
 export default function Footer() {
   return (
     <Box
@@ -8,7 +13,7 @@ export default function Footer() {
       sx={{
         width: "100%",
         bgcolor: "#f7f7f7",
-        p: 2, // less padding
+        p: 2,
         position: "fixed",
         bottom: 0,
         left: 0,
@@ -40,7 +45,7 @@ export default function Footer() {
         >
           <Box
             component="img"
-            src="/contact.jpeg"
+            src={contactIcon}
             alt="Contact"
             sx={{ width: 30, height: 30, borderRadius: 1 }}
           />
@@ -50,16 +55,11 @@ export default function Footer() {
         </Link>
 
         {/* Right side - Social Icons */}
-        <Stack
-          direction="row"
-          spacing={2} // smaller spacing
-          justifyContent="center"
-          alignItems="center"
-        >
+        <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
           {[
-            { href: "https://www.facebook.com/soukaina.janati.1", src: "/facebook.png", label: "Facebook" },
-            { href: "https://www.instagram.com/frostedbysoukaina/", src: "/instagram.avif", label: "Instagram" },
-            { href: "https://wa.me/1234567890", src: "/whatsapp.jpeg", label: "WhatsApp" },
+            { href: "https://www.facebook.com/soukaina.janati.1", src: facebookIcon, label: "Facebook" },
+            { href: "https://www.instagram.com/frostedbysoukaina/", src: instagramIcon, label: "Instagram" },
+            { href: "https://wa.me/1234567890", src: whatsappIcon, label: "WhatsApp" },
           ].map((social, idx) => (
             <Link
               key={idx}
@@ -97,7 +97,6 @@ export default function Footer() {
         </Stack>
       </Box>
 
-      {/* Copyright */}
       <Typography variant="caption" color="text.secondary" sx={{ textAlign: "center" }}>
         &copy; 2023 Soukina Cakery
       </Typography>

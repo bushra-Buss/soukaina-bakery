@@ -1,4 +1,6 @@
 import { Box, Typography, Link } from "@mui/material";
+import location from "../assets/locatoin.png";
+
 
 export default function Location() {
   return (
@@ -125,7 +127,7 @@ export default function Location() {
           }}
         >
           <img
-            src="/locatoin.png"
+            src={location}
             alt="Location Icon"
             style={{ width: "60px", marginBottom: "1rem", alignSelf: "center" }}
           />

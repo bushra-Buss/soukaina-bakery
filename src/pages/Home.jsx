@@ -2,6 +2,8 @@ import React from "react";
 import FeaturedProducts from "../components/FeaturedProducts";
 import { Box, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import cover from "../assets/cover.jpg";
+import logo from "../assets/soukaina.jpg";
 
 export default function Home() {
   return (
@@ -25,7 +27,7 @@ export default function Home() {
         <Box
           sx={{
             width: "60%",
-            backgroundImage: "url('/cover.jpg')",
+            backgroundImage:  `url(${cover})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -53,7 +55,7 @@ export default function Home() {
             }}
           >
             <img
-              src="/soukaina.jpg"
+              src={logo}
               alt="logo"
               style={{
                 width: "180px",

@@ -8,10 +8,13 @@ import {
   CardContent,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import weddingCake from "../assets/wedding cake.jpg";
+import torte1 from "../assets/torte1.jpg";
+
 
 const products = [
-  { title: "Wedding Cake", price: "€250.00", image: "/Wedding cake.jpg" },
-  { title: "Month Baby Cake", price: "€45.00", image: "/torte2(1).jpg" },
+  { title: "Wedding Cake", price: "€250.00", image: weddingCake },
+  { title: "Month Baby Cake", price: "€45.00", image: torte1 },
 ];
 
 export default function FeaturedProducts() {

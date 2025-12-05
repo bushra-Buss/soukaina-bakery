@@ -86,7 +86,7 @@ export default function Navbar() {
               letterSpacing: "1px",
             }}
           >
-            MyStore
+            Soukaina bakery
           </Typography>
 
           {/* Desktop Navigation */}

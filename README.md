@@ -1,16 +1,53 @@
-# React + Vite
+# Soukaina Bakery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a website for **Soukaina Bakery**, built with **React**, **Vite**, and **Material-UI (MUI)**.  
+The website showcases the bakery’s products, location, and provides a contact form with email functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Home page with bakery highlights.
+- Store page displaying products.
+- About page detailing the bakery and its story.
+- Location page with embedded Google Maps and contact info.
+- Contact page with a form that sends emails via **Formspree**.
+- Responsive design for mobile and desktop.
+- Smooth navigation with **React Router**.
+- Material-UI styling for modern look & feel.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** – Frontend library
+- **Vite** – Fast build and dev server
+- **Material-UI (MUI)** – Component library for styling
+- **React Router DOM** – SPA routing
+- **Formspree** – Handling contact form submissions
+- **GitHub Pages** – Deployment
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Clone the repository
+```bash
+git clone https://github.com/bushra-Buss/soukaina-bakery.git
+cd soukaina-bakery
+
+### Clone the repository
+```bash
+npm install
+```
+
+### Run locally
+```bash
+npm run dev
+```
+
+### Build for production
+```bash
+npm run build
+```
+
+
+## Deploy to GitHub Pages
+```bash
+npm install --save-dev gh-pages
+npm run deploy
+```

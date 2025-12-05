@@ -11,58 +11,59 @@ export default function Home() {
       sx={{
         overflowX: "hidden",
         width: "100vw",
-        // Dynamically leave space for footer (height 70px + extra spacing 1rem)
-        minHeight: "calc(100vh - 70px)", 
+        minHeight: "calc(100vh - 70px)", // leave space for footer
         pb: "calc(70px + 1rem)",
       }}
     >
       <Box
         sx={{
           display: "flex",
-          height: "100vh",
+          flexDirection: { xs: "column", md: "row" }, // stack on mobile
+          height: { xs: "auto", md: "100vh" }, // auto height on mobile
           width: "100%",
         }}
       >
-        {/* Left */}
+        {/* Left / Cover */}
         <Box
           sx={{
-            width: "60%",
-            backgroundImage:  `url(${cover})`,
+            width: { xs: "100%", md: "60%" },
+            height: { xs: "300px", md: "100%" }, // smaller height on mobile
+            backgroundImage: `url(${cover})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         />
 
-        {/* Right */}
+        {/* Right / Info */}
         <Box
           sx={{
-            width: "40%",
+            width: { xs: "100%", md: "40%" },
             backgroundColor: "#f7f7f7",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            p: 4,
+            p: { xs: 2, md: 4 }, // responsive padding
           }}
         >
           <Box
             sx={{
-              maxWidth: "80%",
+              maxWidth: { xs: "90%", md: "80%" },
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               gap: 3,
             }}
           >
-            <img
+            <Box
+              component="img"
               src={logo}
               alt="logo"
-              style={{
-                width: "180px",
-                height: "180px",
+              sx={{
+                width: { xs: "120px", md: "180px" },
+                height: { xs: "120px", md: "180px" },
                 borderRadius: "50%",
                 backgroundColor: "white",
-                display: "block",
               }}
             />
 
@@ -71,7 +72,7 @@ export default function Home() {
               sx={{
                 textAlign: "center",
                 color: "rgb(255, 156, 161)",
-                fontSize: "8vh",
+                fontSize: { xs: "6vh", md: "8vh" }, // responsive font size
               }}
             >
               Welcome to our Store
@@ -83,8 +84,8 @@ export default function Home() {
               sx={{
                 backgroundColor: "#2fba4d",
                 color: "rgb(59, 58, 58)",
-                fontSize: "18px",
-                padding: "10px 30px",
+                fontSize: { xs: "16px", md: "18px" },
+                padding: { xs: "8px 20px", md: "10px 30px" },
                 "&:hover": { backgroundColor: "rgba(71, 209, 186, 0.8)" },
                 textTransform: "none",
               }}

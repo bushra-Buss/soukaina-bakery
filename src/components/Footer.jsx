@@ -14,11 +14,8 @@ export default function Footer() {
         width: "100%",
         bgcolor: "#f7f7f7",
         p: 2,
-        position: "fixed",
-        bottom: 0,
-        left: 0,
         boxShadow: "0 -1px 5px rgba(0,0,0,0.1)",
-        zIndex: 1000,
+        mt: "auto", // pushes footer to bottom if content is short
       }}
     >
       <Box

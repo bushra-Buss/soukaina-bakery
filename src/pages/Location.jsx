@@ -4,7 +4,7 @@ import location from "../assets/locatoin.png";
 
 export default function Location() {
   return (
-    <Box sx={{ pt: "80px", px: { xs: 2, md: 6 } }}>
+    <Box sx={{ px: { xs: 2, md: 6 }, pt: 5}}>
       {/* Info Section */}
       <Box className="info" sx={{ textAlign: "center", mb: 4 }}>
         <Typography variant="h3" sx={{ mb: 2 }}>

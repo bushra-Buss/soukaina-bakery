@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import soukaina from "../assets/soukaina1.png";
 
 export default function About() {
   return (
@@ -11,12 +12,11 @@ export default function About() {
           position: "relative",
           overflow: "hidden",
           width: "100%",
-          minHeight: "100vh",
         }}
       >
         {/* Background Image */}
         <img
-          src="/soukaina.png"
+          src={soukaina}
           alt="background"
           style={{
             position: "absolute",

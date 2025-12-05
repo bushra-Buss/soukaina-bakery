@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Typography, TextField, Button, Link } from "@mui/material";
+import contactus from "../assets/contactus.png";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -39,13 +40,12 @@ export default function Contact() {
   };
 
   return (
-    <Box sx={{ minHeight: "100vh", pb: "100px", px: { xs: 2, md: 6 }, pt: 2 }}>
+    <Box sx={{ px: { xs: 2, md: 6 } }}>
       {/* Banner */}
       <Box className="banner" sx={{ textAlign: "center", my: 4 }}>
         <img
-          src="/contactus.png"
+          src={contactus}
           alt="Welcome to our Contact Us page"
-          style={{ maxWidth: "100%", height: "auto" }}
         />
         <Typography variant="h3" sx={{ mt: 2 }}>
           Get in Touch With Us

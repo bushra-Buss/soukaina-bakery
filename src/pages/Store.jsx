@@ -12,7 +12,6 @@ import cake10 from "../assets/cake10.jpeg";
 import cake11 from "../assets/cake11.jpeg";
 import cake12 from "../assets/cake12.jpeg";
 
-
 const products = [
   { name: "Futbol Cake", price: "€60.00", image: cake1, category: "cake" },
   { name: "Butterfly Cake", price: "€60.00", image: cake2, category: "cake" },
@@ -27,7 +26,6 @@ const products = [
   { name: "Funny Cake", price: "€38.50", image: cake12, category: "cake" },
 ];
 
-
 export default function Store() {
   const [category, setCategory] = useState("all");
   const [search, setSearch] = useState("");
@@ -39,9 +37,17 @@ export default function Store() {
   });
 
   return (
-    <Box sx={{ px: { xs: 2, md: 4 }, mt: 12 }}>
+    <Box sx={{ px: { xs: 2, md: 4 }, pb: "calc(70px + 1rem)" }}>
       {/* Filter controls */}
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, mb: 4, justifyContent: "center" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 2,
+          mb: 4,
+          justifyContent: "center",
+        }}
+      >
         <TextField
           label="Search cakes by name..."
           variant="outlined"

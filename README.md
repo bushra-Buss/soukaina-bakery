@@ -29,6 +29,7 @@ The website showcases the bakery’s products, location, and provides a contact 
 ```bash
 git clone https://github.com/bushra-Buss/soukaina-bakery.git
 cd soukaina-bakery
+```
 
 ### Clone the repository
 ```bash
